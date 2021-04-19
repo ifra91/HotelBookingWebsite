@@ -5,10 +5,13 @@
         body {
                 width : 100%;
                 height: 100%;
+                margin : 0px;
+                background-color: #e0e0e0;
             }
             .hotelImage {
                 height: 500px;
                 width: 500px;
+                margin: 2% 4% 0% 4%;
             }
             .logo {
                 height:60px; 
@@ -17,6 +20,25 @@
             .socialLogo {
                 height :20px;
                 width : 22px;
+            }
+            header {
+                background-color: rosybrown;
+            }
+            footer {
+                background-color: rosybrown;
+            }
+            
+            .formStyle{
+                margin-right: 4%;
+                margin-left: 4%;
+                margin-bottom: 1%;
+            }
+            #detailStyle{
+                margin-left: 4%;
+                margin-right: 4%;
+                margin-top: 1%;
+                margin-bottom: 2%;
+
             }
 
         </style>
@@ -31,7 +53,7 @@
             <div>
                 <img class = "hotelImage" src = "https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
                 
-                <form action="payment.html">
+                <form action="payment.html" class="formStyle">
                     
                     <label for="adults">Adults:</label>
                     <input type = "number" id = "adults" name = "number" min = "1" required><br>
@@ -53,7 +75,7 @@
                 </form>
 
 
-                
+                <div id = detailStyle>
                 <h2>Radisson Blu Hotel</h2>
                 <p>RATING</p>
                 <P>5 Star</P>
@@ -68,7 +90,7 @@
                 <div>
                     <p><b>DESCRIPTION</b></p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.um dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi.</p>
-                </div>
+                </div></div>
             </div>
             <footer>
                 <a href = "contact.html" target="_blank">Contact Us</a>
