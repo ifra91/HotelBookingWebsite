@@ -1,12 +1,18 @@
 <!DOCTYPE HTML>
 <html>
     <head>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <style>
         body {
                 width : 100%;
                 height: 100%;
                 margin : 0px;
                 background-color: #e0e0e0;
+                font-family: 'Ubuntu', sans-serif;
+            }
+            #full{
+                margin-top: 80px;
+                margin-bottom: 80px;
             }
             .hotelImage {
                 height: 500px;
@@ -20,12 +26,23 @@
             .socialLogo {
                 height :20px;
                 width : 22px;
+                margin-top:15px;
             }
             header {
                 background-color: rosybrown;
+                position: fixed;
+                top: 0;
+                left:0;
+                width: 100%;
+                height:auto;
             }
             footer {
                 background-color: rosybrown;
+                width: 100%;
+                bottom: 0;
+                position: fixed;
+                height: auto;
+            	top:auto;
             }
             
             .formStyle{
@@ -40,14 +57,29 @@
                 margin-bottom: 2%;
 
             }
+            .login {
+                position: absolute;
+                top: 15px;
+                right: 5px;
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+            #contactus{
+                position: relative;
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                vertical-align: middle;
+            }
 
         </style>
     </head>
     <body>
-        <div>
+        <div id="full">
             <header>
                 <img class = "logo" src = "C:\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" alt = "logo">
-                <a href = "login.html" target="_blank">Login</a>
+                <a href = "login.html" target="_blank" class="login">Login</a>
                 
             </header>
             <div>
@@ -93,13 +125,13 @@
                 </div></div>
             </div>
             <footer>
-                <a href = "contact.html" target="_blank">Contact Us</a>
-                <div>
-                <a href = "https://www.facebook.com" target="_blank"><img class = "socialLogo" src = "assests/images/facebook.png"></a>
-                <a href = "https://www.instagram.com" target="_blank"><img class = "socialLogo" src = "assests/images/instagram.png"></a>
-                <a href = "https://www.twitter.com" target="_blank"><img class = "socialLogo" src = "assests/images/twitter.png"></a>
-                </div>
-                <p> © 2020 ROOM SEARCH PVT. LTD</p>
+                <span><a href = "contact.html" target="_blank" id="contactus">Contact Us</a></span>
+                <span style="padding-left: 85%;">
+                <a href = "https://www.facebook.com" target="_blank"><img class ="socialLogo" src = "assests/images/facebook.png"  alt ="facebooklogo"></a>
+                <a href = "https://www.instagram.com" target="_blank"><img class ="socialLogo" src = "assests/images/instagram.png" alt ="instagramlogo"></a>
+                <a href = "https://www.twitter.com" target="_blank"><img class ="socialLogo" src = "assests/images/twitter.png" alt ="twitterlogo"></a>
+                </span>
+                <span style = "padding-left: 40%;"> © 2020 ROOM SEARCH PVT. LTD</span>
             </footer>
         </div>
     </body>
