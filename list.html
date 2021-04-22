@@ -10,33 +10,43 @@
                 background-color: #e0e0e0;
                 font-family: 'Ubuntu', sans-serif;
                 
+                
             }
             #full{
                 margin-top: 80px;
+                margin-bottom: 100px;
+                
                 
             }
             .hotelImage {
                 height: 250px;
                 width: 250px;
+                align-self: flex-start;
             
             }
+
             .logo {
                 height:60px; 
                 width:60px;
             }
+
             .socialLogo {
                 height :20px;
                 width : 22px;
-                margin-top:15px;
             }
+
             header {
                 background-color: rosybrown;
                 position: fixed;
                 top: 0;
                 left:0;
                 width: 100%;
-                height:auto;
-            }
+                height:10%;
+                display: flex;
+                justify-content: space-between;
+                
+                }
+
             footer {
                 background-color: rosybrown;
                 width: 100%;
@@ -44,12 +54,32 @@
                 position: fixed;
                 height: auto;
             	top:auto;
-            }
+                display: flex;
+                justify-content:space-between;
+                vertical-align: middle;
+                padding: 1%;
+                
+             }
+             
             .contentDiv {
-                margin: 2%;
-                background-color: rgb(132,136,139);
+                margin: 5%;
+                background-color:lightgrey;
                 width: 50%;
                 height: auto;
+                display: flex;
+                flex: 30%;   
+            
+            }
+
+            .column {
+                display: flex;
+            flex-wrap: wrap;
+            }
+
+            .textRight {
+                flex: 1 1 auto;
+                margin: 5%;
+                justify-content: center;
             }
  
            .login {
@@ -59,34 +89,23 @@
                 text-decoration: none;
                 color: black;
                 font-weight: bold;
+                margin-right: 10px;
             }
+
             .view {
                 text-decoration: none;
                 padding-left: 42%;
                 padding-right: 2%;
                 
             }
+
             #linkSty{
                 text-decoration: none;
                 color: black;
                 font-weight: bold;
             }
-            #contactus{
-                position: relative;
-                text-decoration: none;
-                color: black;
-                font-weight: bold;
-                vertical-align: middle;
-            }
-            .row{
-                display: flex;
-                padding: 10px;
-               
-            }
-            .column {
-                flex: 55%;
-                
-            }
+
+           
             .map{
                 display: none;
             }
@@ -106,28 +125,29 @@
                 <span><a href = "#mapView" id="linkSty" > Map View</a></span>
                 
 
-                <div id = "listView">
+                <div id = "listView" class="column">
 
-                <div class="row">
-                    <div class="contentDiv"><div class="column">
-                <a href = "detail.html" id="linkSty"><img class="hotelImage" src = "https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt = "Raddison Blue Hotel">
-                <h3>Radisson Blu Hotel</h3>
+                <div class="contentDiv">
+                <a href = "detail.html" id="linkSty"><img class="hotelImage" src = "https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt = "Raddison Blue Hotel"></a>
+                <div class="textRight"><h3 style="font-weight: bolder; font-size: larger;">Radisson Blu Hotel</h3>
                 <p><a href = "detail.html" id="linkSty">5 Star</a></p>
-                <p><a href = "detail.html" id="linkSty">New Delhi</a></p></div></div>
-                                
-                <div class="column contentDiv">
+                <p><a href = "detail.html" id="linkSty">New Delhi</a></p></div></div>                                
+                
+                
+                <div class="contentDiv">
                 <img class="hotelImage" src = "https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt ="The Lalit New Delhi">
-                <p><h3>The Lalit New Delhi</h3></p>
+                <div class="textRight"><h3>The Lalit New Delhi</h3>
                 <p id="linkSty">4.5 Star</p>
-                <p id="linkSty">New Delhi</p></div></div></div>
+                <p id="linkSty">New Delhi</p></div></div>
 
-                <div class="row">
-                    <div class ="contentDiv"><div class ="column">
+                <div class="contentDiv">
                 <img class="hotelImage" src = "https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt = "Taj Palace">
-                <p><h3>Taj Palace</h3></p>
+                <div class="textRight"><p><h3>Taj Palace</h3></p>
                 <p id="linkSty">4.0 Star</p>
                 <p id="linkSty">New Delhi</p></div></div>
-                </div>
+                
+                <div class="contentDiv" style="visibility: hidden;"></div>
+            </div>
 
                 <div id = "mapView" class="map">
                 <img src ="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt = "Map Image">
@@ -136,13 +156,13 @@
             
             </div>
             <footer>
-                <span><a href = "contact.html" target="_blank" id="contactus">Contact Us</a></span>
-                <span style="padding-left: 85%;">
-                <a href = "https://www.facebook.com" target="_blank"><img class ="socialLogo" src = "assests/images/facebook.png"  alt ="facebooklogo"></a>
+                <span><a href = "contact.html" target="_blank" id="linkSty">Contact Us</a></span>
+                <span> © 2020 ROOM SEARCH PVT. LTD</span>
+                <span style="margin-right: 30px;"><a href = "https://www.facebook.com" target="_blank"><img class ="socialLogo" src = "assests/images/facebook.png"  alt ="facebooklogo"></a>
                 <a href = "https://www.instagram.com" target="_blank"><img class ="socialLogo" src = "assests/images/instagram.png" alt ="instagramlogo"></a>
                 <a href = "https://www.twitter.com" target="_blank"><img class ="socialLogo" src = "assests/images/twitter.png" alt ="twitterlogo"></a>
                 </span>
-                <span style = "padding-left: 40%;"> © 2020 ROOM SEARCH PVT. LTD</span>
+                
             </footer>
         </div>
     </body>
