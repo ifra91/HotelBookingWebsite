@@ -1,0 +1,66 @@
+.pageSize {
+    margin: 25px 50px 300px 50px;
+}
+
+.hotelImage {
+    height: 250px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    flex: 40%;
+}
+
+.info {
+    background-color: rgb(132, 136, 139);
+    max-width: 60%;
+    min-width: 25%;
+    max-height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+    margin-bottom: 2%;
+    display: flex;
+    flex: 100%;
+}
+
+.detailsColumn {
+    width: 100%;
+    margin: 5%;
+}
+
+h3 {
+    font-size: 250%;
+    font-weight: bolder;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contactus {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+#linkSty {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.customer {
+    margin: 5%;
+}
+
+.tarrif {
+    margin: 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1% 2%;
+    background-color: rosybrown;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}

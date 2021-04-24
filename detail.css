@@ -1,0 +1,85 @@
+@font-face {
+    font-family: font-awesome;
+    src: url(cdnjs.cloudflare.com);
+}
+
+#main {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.hotelImage {
+    height: 400px;
+    width: 400px;
+    margin: 7% 4% 0% 4%;
+}
+
+.formStyle {
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-bottom: 1%;
+}
+
+#detailStyle {
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.mainBox {
+    width: 100%;
+    margin: 0;
+    padding: 2%;
+    height: 50%;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.sideBox1 {
+    width: 60%;
+    height: auto;
+    border: 2px solid black;
+    float: right;
+    display: flex;
+    justify-content: center;
+}
+
+.sideBox2 {
+    width: 40%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+.labelStyle {
+    margin: 2%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+
+.submitstyle {
+    height: 50px;
+    width: 120px;
+    padding: 1% 2%;
+    margin-left: 43%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-color: green;
+    color: green;
+    border-radius: 5%;
+}
+
+.submitstyle:hover {
+    color: white;
+    background-color: green;
+}
+
+.length {
+    width: 60%;
+}

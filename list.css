@@ -1,0 +1,41 @@
+.hotelImage {
+    height: 200px;
+    width: 250px;
+    align-self: flex-start;
+}
+
+.contentDiv {
+    margin: 5%;
+    background-color: lightgrey;
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex: 30%;
+}
+
+.contentDiv:hover {
+    background-color: rosybrown;
+}
+
+.column {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.textRight {
+    flex: 1 1 auto;
+    margin: 5%;
+    justify-content: center;
+}
+
+.view {
+    text-decoration: none;
+    padding-left: 42%;
+    padding-right: 2%;
+}
+
+#linkSty {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
