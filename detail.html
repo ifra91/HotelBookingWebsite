@@ -9,9 +9,65 @@
 
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
         <style>
 
+.carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgb(0 0 0 / 60%);
+    background-color: rgba(0,0,0,0);
+    filter: alpha(opacity=50);
+    opacity: 1;
+    border: none;
+}
+.carousel-control.left {
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));
+    background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat: repeat-x;
+    border: none;
+    background-color: #e0e0e0 ;
+}
+
+.carousel-control .glyphicon-chevron-left
+{
+    width: 55px;
+    height: 55px;
+    margin-top: -10px;
+    font-size: 40px;
+    color: rosybrown;
+}
+.carousel-control .glyphicon-chevron-right
+{
+  width: 55px;
+    height: 55px;
+    margin-top: -10px;
+    font-size: 40px;
+    color: rosybrown;
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+  }
 
 .checked {
   color: orange;
@@ -62,8 +118,8 @@
 
             .hotelImage {
                 height: 400px;
-                width: 500px;
-                margin: 7% 4% 0% 4%;
+                width: 400px;
+                /* margin: 7% 4% 0% 4%; */
 
             }
             .logo {
@@ -80,7 +136,7 @@
                 position: sticky;
                 top: 0;
                 left:0;
-                width: 100%;
+                width: 95%;
                 height:auto;
                 display: flex;
                 justify-content: space-between;
@@ -132,7 +188,7 @@
                 font-weight: bold;
             }
             .mainBox {
-                width:100%;
+                width:95%;
                 margin:0;
                 padding: 2%;
                 height:50%;
@@ -185,11 +241,14 @@
             }
         </style>
     </head>
+  <!-- Start of Body-->
     <body>
+      <!-- Start of Div name full-->
         <div id="full">
+          <!-- Start of header DIV-->
             <header>
                 <img class = "logo" src = "C:\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" alt = "logo">
-                
+                <!-- Start of Modal Login-->
                 <button type="button" class="btn btn-light login" data-toggle="modal" data-target="#exampleModal">
                     Login</button>
                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -223,19 +282,46 @@
                             </div>
                           </div>
                         </div>
-
-
-
-
-
-                
+ <!-- End of Modal Login-->             
             </header>
+             <!-- End of Header-->
             <div>
 
                 <div class="mainBox">
                     <div class="sideBox1">
 
-                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                      <div class="container">
+                        <br>
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                          <div class="carousel-inner" role="listbox">
+
+                            <div class="item active">
+                              <img class = "hotelImage" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
+                            </div>
+                            <div class="item">
+                              <img class = "hotelImage" src="https://i.pinimg.com/originals/aa/31/0e/aa310e657d1c2ef1d8e4e6e8a087c1e7.jpg">
+                            </div>
+                            <div class="item">
+                              <img class = "hotelImage" src="https://exp.cdn-hotels.com/hotels/2000000/1530000/1528800/1528788/a913bc74_z.jpg?impolicy=fcrop&w=773&h=530&q=high">
+                            </div></div>
+
+                            <button class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" >
+                              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </button>
+                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                        </div>
+
+
+
+
+
+
+                        <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                               <div class="carousel-item active">
                                 <img class = "hotelImage" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="d-block w-100" alt="...">
@@ -257,7 +343,7 @@
                                 <span class="sr-only">Next</span>
                               </a>
 
-                            </div>
+                            </div> -->
                     
                     
                     
