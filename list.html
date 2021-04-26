@@ -169,7 +169,7 @@
         <div class="contentDiv">
             <a href="detail.html" id="linkSty"><img class="hotelImage" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Raddison Blue Hotel"></a>
                     <div class="textRight">
-                    <h3 style="font-weight: bolder; font-size: larger;">Radisson Blu Hotel</h3>
+                    <h3 class ="newH3Size">Radisson Blu Hotel</h3>
                     <p><a href="detail.html" id="linkSty"><span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -182,9 +182,9 @@
 
     <!--Div for list View of Hotels with Star Ratings and details with Hotel Image-->
     <div class="contentDiv">
-        <img class="hotelImage" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="The Lalit New Delhi">
+        <div id="linkSty"><img class="hotelImage" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="The Lalit New Delhi"></div>
         <div class="textRight">
-            <h3>The Lalit New Delhi</h3>
+            <h3 class="newH3Size">The Lalit New Delhi</h3>
             <p id="linkSty"><span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -196,11 +196,9 @@
 
     <!--Div for list View of Hotels with Star Ratings and details with Hotel Image-->
     <div class="contentDiv">
-        <img class="hotelImage" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="Taj Palace">
+        <div id="linkSty"><img class="hotelImage" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="Taj Palace"></div>
         <div class="textRight">
-            <p>
-                <h3>Taj Palace</h3>
-            </p>
+            <h3 class="newH3Size">Taj Palace</h3>
             <p id="linkSty"><span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -210,7 +208,11 @@
         </div>
     </div>
 
-    <div class="contentDiv" style="visibility: hidden;"></div>
+    <div class="contentDiv" id="boxVisibility" style="visibility: hidden;">
+        <h3></h3>
+        <p></p>
+        <div></div>
+    </div>
     </div>
     </div>
     <!--When Map View Button is Clicked class ContentDiv hides and MapView is activated using bootstrap toggle-->

@@ -1,41 +1,202 @@
-.hotelImage {
-    height: 200px;
-    width: 250px;
-    align-self: flex-start;
+@media only screen and (max-width: 576px) {
+    .hotelImage .contentDiv {
+        display: flex;
+        max-height: 100%;
+        max-width: 100%;
+        align-self: flex-start;
+    }
+    #boxVisibility {
+        visibility: hidden;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .contentDiv {
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .contentDiv:hover {
+        background-color: rosybrown;
+    }
+    .column {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .textRight {
+        flex: 1 1 auto;
+        margin: 5%;
+        justify-content: center;
+        text-align: center;
+    }
+    .view {
+        text-decoration: none;
+        padding-left: 42%;
+        padding-right: 2%;
+    }
+    #linkSty {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    .newH3Size {
+        font-size: small;
+    }
 }
 
-.contentDiv {
-    margin: 5%;
-    background-color: lightgrey;
-    width: 250px;
-    height: 200px;
-    display: flex;
-    flex: 30%;
+
+/* Extra small devices (phones, 576px and up) */
+
+@media only screen and (min-width: 576px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .contentDiv {
+        margin: 5%;
+        background-color: lightgrey;
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex: auto;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+    .contentDiv:hover {
+        background-color: rosybrown;
+    }
+    .column {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .textRight {
+        flex: 1 1 auto;
+        margin: 5%;
+        justify-content: center;
+    }
+    .view {
+        text-decoration: none;
+        padding-left: 42%;
+        padding-right: 2%;
+    }
+    #linkSty {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    .hotelImage {
+        display: flex;
+        width: 250px;
+        height: 250px;
+        align-self: flex-start;
+    }
 }
 
-.contentDiv:hover {
-    background-color: rosybrown;
-}
 
-.column {
-    display: flex;
-    flex-wrap: wrap;
-}
+/* Medium devices (landscape tablets, 768px and up) 
 
-.textRight {
-    flex: 1 1 auto;
-    margin: 5%;
-    justify-content: center;
-}
+@media only screen and (min-width: 768px) {
+    img {
+        width: 600px;
+        height: 300px;
+        display: flex;
+        align-content: flex-start;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin: 5%;
+    }
+    .contentDiv {
+        margin: 5%;
+        background-color: lightgrey;
+        /* width: 300px; */
 
-.view {
-    text-decoration: none;
-    padding-left: 42%;
-    padding-right: 2%;
-}
 
-#linkSty {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+/*height: min-content;
+        display: flex;
+        flex: auto;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .contentDiv:hover {
+        background-color: rosybrown;
+    }
+    .column {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .textRight {
+        flex: 1 1 auto;
+        margin: 5%;
+        justify-content: center;
+    }
+    .view {
+        text-decoration: none;
+        padding-left: 42%;
+        padding-right: 2%;
+    }
+    #linkSty {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    .hotelImage {
+        display: flex;*/
+
+
+/* width: 300px; */
+
+
+/* height: 300px; */
+
+
+/*flex: auto;
+        align-self: flex-start;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: stretch;
+    }
+} */
+
+@media screen and (min-width: 768px) {
+    .hotelImage {
+        height: 100%;
+        align-self: flex-start;
+    }
+    .contentDiv {
+        margin: 5%;
+        background-color: lightgrey;
+        height: auto;
+        display: flex;
+        flex: 40%;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .contentDiv:hover {
+        background-color: rosybrown;
+    }
+    .column {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .textRight {
+        flex: 40%;
+        margin: 5%;
+        justify-content: center;
+    }
+    .view {
+        text-decoration: none;
+        padding-left: 42%;
+        padding-right: 2%;
+    }
+    #linkSty {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
 }

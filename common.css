@@ -3,11 +3,171 @@
     src: url(fonts.googleapis.com);
 }
 
+
+/* RESPONSIVE CSS START */
+
+@media only screen and (max-width: 576px) {
+    * {
+        box-sizing: border-box;
+    }
+    #main {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        position: absolute;
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
+    /* For tablets: */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    header {
+        width: auto;
+        height: auto;
+    }
+    body {
+        max-width: 100%;
+    }
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+    .log {
+        height: 15%;
+        width: 15%;
+    }
+    .socialLogo {
+        height: 5%;
+        width: 5%;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 576px) {
+    * {
+        box-sizing: border-box;
+    }
+    #main {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        position: absolute;
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
+    header {
+        width: 8.33%;
+        height: 8.33%
+    }
+    body {
+        width: 8.66%;
+    }
+    footer {
+        width: 8.33%;
+        height: 8.33%
+    }
+    .log {
+        height: 15%;
+        width: 15%;
+    }
+    .socialLogo {
+        height: 15%;
+        width: 15%;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    * {
+        box-sizing: border-box;
+    }
+    #main {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        position: absolute;
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
+    header {
+        width: 8.33%;
+        height: 8.33%
+    }
+    body {
+        width: 8.66%;
+    }
+    footer {
+        width: 8.33%;
+        height: 8.33%
+    }
+    .log {
+        height: 15%;
+        width: 15%;
+    }
+    .socialLogo {
+        height: 15%;
+        width: 15%;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+
+/* @media only screen and (min-width: 992px) {
+    #main {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        position: absolute;
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
+    header {
+        width: 8.33%;
+        height: 8.33%
+    }
+    body {
+        width: 8.66%;
+    }
+    footer {
+        width: 8.33%;
+        height: 8.33%
+    }
+    .log {
+        height: 15%;
+        width: 15%;
+    }
+    .socialLogo {
+        height: 15%;
+        width: 15%;
+    }
+} */
+
+
+/* RESPONSIVE CSS END */
+
+
+/* MAIN CSS */
+
+* {
+    box-sizing: border-box;
+}
+
 #main {
     width: 100%;
     height: 100%;
-    margin: 0;
+    margin: 0px;
     position: absolute;
+    margin-top: 50px;
+    margin-bottom: 150px;
 }
 
 body {
@@ -34,7 +194,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 10%;
+    height: auto;
     display: flex;
     justify-content: space-between;
     position: fixed;

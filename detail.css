@@ -3,83 +3,275 @@
     src: url(cdnjs.cloudflare.com);
 }
 
-#main {
-    margin-top: 50px;
-    margin-bottom: 100px;
+
+/*css for small screen upto 576px*/
+
+@media only screen and (max-width: 576px) {
+    .hotelImage {
+        height: 450px;
+        width: 450px;
+        margin: 0;
+        flex: 1;
+        min-width: -webkit-fill-available;
+        padding-bottom: 2%;
+        z-index: -1;
+    }
+    .formStyle {
+        margin-right: 4%;
+        margin-left: 4%;
+        margin-bottom: 1%;
+    }
+    #detailStyle {
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
+    .mainBox {
+        width: 100%;
+        margin-top: 10%;
+        padding: 2%;
+        height: 50%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .sideBox1 {
+        min-inline-size: fit-content;
+        min-width: -webkit-fill-available;
+        border: none;
+        object-fit: cover;
+        width: 60%;
+        height: auto;
+        border: 2px solid black;
+        float: right;
+        display: contents;
+    }
+    .sideBox2 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        float: left;
+        overflow: hidden;
+        border: 2px solid black;
+    }
+    a {
+        color: #337ab7;
+        text-decoration: none;
+        display: none;
+    }
+    button {
+        display: none;
+    }
+    .labelStyle {
+        margin: 2%;
+        height: max-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2%;
+    }
+    .submitstyle {
+        height: 50px;
+        width: 120px;
+        padding: 1% 2%;
+        margin-left: 43%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        border-color: green;
+        color: green;
+        border-radius: 5%;
+    }
+    .submitstyle:hover {
+        color: white;
+        background-color: green;
+    }
+    .length {
+        width: 60%;
+    }
+    .spaceBelow {
+        margin-bottom: 200px;
+    }
 }
 
-.hotelImage {
-    height: 400px;
-    width: 400px;
-    margin: 7% 4% 0% 4%;
+
+/*css for small screen 576px and above*/
+
+@media only screen and (min-width: 576px) {
+    .hotelImage {
+        height: 450px;
+        width: 450px;
+        margin: 0;
+        flex: 1;
+        min-width: -webkit-fill-available;
+        z-index: -1;
+    }
+    a {
+        color: #337ab7;
+        text-decoration: none;
+        display: none;
+    }
+    button {
+        display: none;
+    }
+    #main {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        position: absolute;
+        overflow: auto;
+    }
+    .formStyle {
+        margin-right: 4%;
+        margin-left: 4%;
+        margin-bottom: 1%;
+    }
+    #detailStyle {
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
+    .mainBox {
+        width: 100%;
+        margin: 0;
+        padding: 2%;
+        height: 50%;
+        box-sizing: border-box;
+        display: flex;
+    }
+    .sideBox1 {
+        width: 60%;
+        height: auto;
+        border: 2px solid black;
+        float: right;
+        display: flex;
+        justify-content: center;
+    }
+    .sideBox2 {
+        width: 40%;
+        height: 100%;
+        float: left;
+        overflow: hidden;
+        border: 2px solid black;
+    }
+    .labelStyle {
+        margin: 2%;
+        height: max-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2%;
+    }
+    .submitstyle {
+        height: 50px;
+        width: 120px;
+        padding: 1% 2%;
+        margin-left: 43%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        border-color: green;
+        color: green;
+        border-radius: 5%;
+    }
+    .submitstyle:hover {
+        color: white;
+        background-color: green;
+    }
+    .length {
+        width: 60%;
+    }
 }
 
-.formStyle {
-    margin-right: 4%;
-    margin-left: 4%;
-    margin-bottom: 1%;
-}
 
-#detailStyle {
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-top: 1%;
-    margin-bottom: 2%;
-}
+/*css for Large Screens*/
 
-.mainBox {
-    width: 100%;
-    margin: 0;
-    padding: 2%;
-    height: 50%;
-    box-sizing: border-box;
-    display: flex;
-}
-
-.sideBox1 {
-    width: 60%;
-    height: auto;
-    border: 2px solid black;
-    float: right;
-    display: flex;
-    justify-content: center;
-}
-
-.sideBox2 {
-    width: 40%;
-    height: 100%;
-    float: left;
-    overflow: hidden;
-    border: 2px solid black;
-}
-
-.labelStyle {
-    margin: 2%;
-    height: max-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2%;
-}
-
-.submitstyle {
-    height: 50px;
-    width: 120px;
-    padding: 1% 2%;
-    margin-left: 43%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    border-color: green;
-    color: green;
-    border-radius: 5%;
-}
-
-.submitstyle:hover {
-    color: white;
-    background-color: green;
-}
-
-.length {
-    width: 60%;
+@media only screen and (min-width: 768px) {
+    a {
+        color: #337ab7;
+        text-decoration: none;
+        display: block;
+    }
+    button {
+        display: block;
+    }
+    .hotelImage {
+        height: 400px;
+        width: 400px;
+        margin: 7% 4% 0% 4%;
+        z-index: -1;
+    }
+    .formStyle {
+        margin-right: 4%;
+        margin-left: 4%;
+        margin-bottom: 1%;
+    }
+    #detailStyle {
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
+    .mainBox {
+        width: 100%;
+        margin: 0;
+        padding: 2%;
+        height: 60%;
+        box-sizing: border-box;
+        display: flex;
+    }
+    .sideBox1 {
+        width: 60%;
+        height: auto;
+        border: 2px solid black;
+        float: right;
+        display: flex;
+        justify-content: center;
+        padding: 1%;
+    }
+    .sideBox2 {
+        width: 40%;
+        height: auto;
+        float: left;
+        overflow: hidden;
+        border: 2px solid black;
+    }
+    .labelStyle {
+        margin: 2%;
+        height: max-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2%;
+    }
+    .submitstyle {
+        height: 50px;
+        width: 120px;
+        padding: 1% 2%;
+        margin-left: 43%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        border-color: green;
+        color: green;
+        border-radius: 5%;
+    }
+    .submitstyle:hover {
+        color: white;
+        background-color: green;
+    }
+    .length {
+        width: 60%;
+    }
+    #main {
+        min-height: max-content;
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        position: absolute;
+        overflow: visible;
+    }
 }

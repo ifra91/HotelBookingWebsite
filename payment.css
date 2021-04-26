@@ -1,66 +1,234 @@
-.pageSize {
-    margin: 25px 50px 300px 50px;
+/*css screen size 576px and below*/
+
+@media screen and (max-width: 576px) {
+    .info {
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: rgb(132, 136, 139);
+        max-width: 95%;
+        min-width: 25%;
+        max-height: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 7%;
+        margin-bottom: 2%;
+        display: flex;
+        flex: 95%;
+    }
+    .tarrif {
+        margin: 2%;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 1% 2%;
+        background-color: rosybrown;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: left;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .pageSize {
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+    .btnLarge {
+        margin-top: 4%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #main {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        position: absolute;
+        overflow: auto;
+    }
+    .hotelImage {
+        height: 250px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        float: left;
+        flex: 40%;
+    }
+    .detailsColumn {
+        width: 100%;
+        margin: 5%;
+    }
+    h3 {
+        font-size: 250%;
+        font-weight: bolder;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #contactus {
+        position: relative;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        vertical-align: middle;
+    }
+    #linkSty {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    .customer {
+        margin: 5%;
+    }
 }
 
-.hotelImage {
-    height: 250px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    float: left;
-    flex: 40%;
+
+/* css max-width: 576px and above Screen*/
+
+@media screen and (min-width: 576px) {
+    .pageSize {
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+    .btnLarge {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    #main {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        position: absolute;
+        overflow: auto;
+    }
+    .hotelImage {
+        height: 250px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        float: left;
+        flex: 40%;
+    }
+    .info {
+        background-color: rgb(132, 136, 139);
+        max-width: 95%;
+        max-height: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 7%;
+        margin-bottom: 2%;
+        display: flex;
+        width: fit-content;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .detailsColumn {
+        width: 100%;
+        margin: 5%;
+    }
+    h3 {
+        font-size: 250%;
+        font-weight: bolder;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #contactus {
+        position: relative;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        vertical-align: middle;
+    }
+    #linkSty {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    .customer {
+        margin: 5%;
+    }
+    .tarrif {
+        margin: 2%;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 1% 2%;
+        background-color: rosybrown;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: left;
+    }
 }
 
-.info {
-    background-color: rgb(132, 136, 139);
-    max-width: 60%;
-    min-width: 25%;
-    max-height: 20%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 7%;
-    margin-bottom: 2%;
-    display: flex;
-    flex: 100%;
-}
 
-.detailsColumn {
-    width: 100%;
-    margin: 5%;
-}
+/* css Larger Screen 768 and above*/
 
-h3 {
-    font-size: 250%;
-    font-weight: bolder;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#contactus {
-    position: relative;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    vertical-align: middle;
-}
-
-#linkSty {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.customer {
-    margin: 5%;
-}
-
-.tarrif {
-    margin: 2%;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 1% 2%;
-    background-color: rosybrown;
-    display: flex;
-    justify-content: space-evenly;
-    text-align: left;
+@media screen and (min-width: 768px) {
+    .pageSize {
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+    .btnLarge {
+        margin-top: 4%;
+    }
+    #main {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        position: absolute;
+        overflow: auto;
+    }
+    .hotelImage {
+        height: 250px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        float: left;
+        flex: 40%;
+    }
+    .info {
+        background-color: rgb(132, 136, 139);
+        max-width: 60%;
+        min-width: 25%;
+        max-height: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 7%;
+        margin-bottom: 2%;
+        display: flex;
+        flex: 100%;
+    }
+    .detailsColumn {
+        width: 100%;
+        margin: 5%;
+    }
+    h3 {
+        font-size: 250%;
+        font-weight: bolder;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #contactus {
+        position: relative;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        vertical-align: middle;
+    }
+    #linkSty {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    .customer {
+        margin: 5%;
+    }
+    .tarrif {
+        margin: 2%;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 1% 2%;
+        background-color: rosybrown;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: left;
+    }
 }
