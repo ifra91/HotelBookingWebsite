@@ -15,16 +15,12 @@
         height: 100%;
         margin: 0px;
         position: absolute;
-        margin-top: 50px;
+        margin-top: 150px;
         margin-bottom: 150px;
     }
     /* For tablets: */
     img {
         max-width: 100%;
-        height: auto;
-    }
-    header {
-        width: auto;
         height: auto;
     }
     body {
@@ -42,6 +38,28 @@
     .socialLogo {
         height: 5%;
         width: 5%;
+    }
+    header {
+        background-color: rosybrown;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+    }
+    footer {
+        background-color: rosybrown;
+        width: 100%;
+        bottom: 0;
+        position: fixed;
+        height: auto;
+        top: auto;
+        display: flex;
+        justify-content: space-between;
+        vertical-align: middle;
+        padding: 1%;
     }
 }
 
@@ -79,6 +97,28 @@
         height: 15%;
         width: 15%;
     }
+    header {
+        background-color: rosybrown;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+    }
+    footer {
+        background-color: rosybrown;
+        width: 100%;
+        bottom: 0;
+        position: fixed;
+        height: auto;
+        top: auto;
+        display: flex;
+        justify-content: space-between;
+        vertical-align: middle;
+        padding: 1%;
+    }
 }
 
 
@@ -114,6 +154,28 @@
     .socialLogo {
         height: 15%;
         width: 15%;
+    }
+    header {
+        background-color: rosybrown;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+    }
+    footer {
+        background-color: rosybrown;
+        width: 100%;
+        bottom: 0;
+        position: fixed;
+        height: auto;
+        top: auto;
+        display: flex;
+        justify-content: space-between;
+        vertical-align: middle;
+        padding: 1%;
     }
 }
 

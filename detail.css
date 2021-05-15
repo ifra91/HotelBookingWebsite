@@ -14,7 +14,7 @@
         flex: 1;
         min-width: -webkit-fill-available;
         padding-bottom: 2%;
-        z-index: -1;
+        z-index: -4;
     }
     .formStyle {
         margin-right: 4%;
@@ -106,7 +106,7 @@
         margin: 0;
         flex: 1;
         min-width: -webkit-fill-available;
-        z-index: -1;
+        z-index: -4;
     }
     a {
         color: #337ab7;
@@ -121,7 +121,6 @@
         height: 100%;
         margin: 0;
         position: absolute;
-        overflow: auto;
     }
     .formStyle {
         margin-right: 4%;
@@ -190,6 +189,9 @@
 /*css for Large Screens*/
 
 @media only screen and (min-width: 768px) {
+    #main {
+        margin-top: 150px;
+    }
     a {
         color: #337ab7;
         text-decoration: none;
@@ -202,7 +204,7 @@
         height: 400px;
         width: 400px;
         margin: 7% 4% 0% 4%;
-        z-index: -1;
+        z-index: -4;
     }
     .formStyle {
         margin-right: 4%;
@@ -214,10 +216,11 @@
         margin-right: 4%;
         margin-top: 1%;
         margin-bottom: 2%;
+        padding: 1% 1% 10% 1%;
     }
     .mainBox {
         width: 100%;
-        margin: 0;
+        margin: 0%;
         padding: 2%;
         height: 60%;
         box-sizing: border-box;
@@ -265,13 +268,5 @@
     }
     .length {
         width: 60%;
-    }
-    #main {
-        min-height: max-content;
-        width: 100%;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        position: absolute;
-        overflow: visible;
     }
 }

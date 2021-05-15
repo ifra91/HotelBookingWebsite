@@ -98,7 +98,7 @@
         overflow: auto;
     }
     .hotelImage {
-        height: 250px;
+        height: 258px;
         width: 300px;
         display: flex;
         flex-direction: column;
@@ -177,7 +177,7 @@
         overflow: auto;
     }
     .hotelImage {
-        height: 250px;
+        height: 272px;
         width: 300px;
         display: flex;
         flex-direction: column;
