@@ -46,6 +46,7 @@
         height: auto;
         border-radius: 25%;
         justify-content: space-between;
+        /* z-index: -1000; */
     }
     .cityImage {
         height: 300px;
@@ -138,6 +139,7 @@
         border-radius: 25%;
         justify-content: center;
         padding: 5%;
+        /* z-index: -1000; */
     }
     .cityImage {
         height: 300px;
@@ -164,6 +166,9 @@
         width: 300px;
         box-shadow: 10px 10px 10px 0px grey;
         inline-size: -webkit-fill-available;
+    }
+    .layertop {
+        z-index: -1;
     }
     .container:hover .layertop,
     .container.active .layertop {
@@ -234,6 +239,7 @@
         flex-wrap: wrap;
         flex-direction: row;
         flex: 1;
+        /* z-index: -1000; */
     }
     .container img {
         max-width: 100%;
@@ -331,6 +337,10 @@
 .container,
 .container * {
     box-sizing: border-box;
+}
+
+.z-ind {
+    z-index: -1000;
 }
 
 

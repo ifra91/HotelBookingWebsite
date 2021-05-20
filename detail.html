@@ -25,6 +25,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <script src="scripts/detail.js"></script>
+
     <!--Style to customize Bootstrap Styling and other external link-->
     <style>
         #myCarousel {
@@ -78,7 +80,7 @@
         }
         
         .halfChecked {
-            background: linear-gradient( to right, orange 30%, #eedd44);
+            background: linear-gradient(to right, orange 30%, #eedd44);
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
         }
@@ -119,9 +121,8 @@
             display: flex;
         }
         
-        .smallIcons {
-            margin-right: 30px;
-            display: flex;
+        a {
+            display: contents;
         }
     </style>
 </head>
@@ -134,43 +135,10 @@
     <body>
         <a href="loader.html"></a>
         <!-- Start of header DIV-->
-        <header>
-            <img class="logo" src="C:\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" alt="logo">
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-light login" data-toggle="modal" data-target="#exampleModal">
-                    Login
-                </button>
+        <header id="header">
 
-            <!-- Start of Modal Login-->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                              </button>
-                        </div>
+            <script src="scripts/common.js"></script>
 
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" style="margin-left: auto;margin-right: auto;">Login</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End of Modal Login-->
         </header>
         <!-- End of Header-->
 
@@ -195,8 +163,8 @@
                                 </div>
                             </div>
                             <button class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                              <span class="sr-only">Previous</span>
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
                             </button>
                             <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
                                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
@@ -209,29 +177,34 @@
 
                 <!--Customer Hotel Booking Form-->
                 <div class="sideBox2">
-                    <form action="payment.html" class="formStyle">
+                    <form action="payment.html" class="formStyle" id="myForm" method="GET" onsubmit="return results();">
 
                         <div class="labelStyle">
                             <label for="adults">Adults:</label>
-                            <input type="number" id="adults" name="number" min="1" required class="length"></div><br>
+                            <input type="number" id="adults" name="number" min="1" required class="length">
+                        </div><br>
 
                         <div class="labelStyle">
                             <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required class="length"></div><br>
+                            <input type="text" id="name" name="name" required class="length">
+                        </div><br>
 
                         <div class="labelStyle">
                             <label for="from">From Date:</label>
-                            <input type="date" id="from" name="from" required class="length"></div><br>
+                            <input type="date" id="from" oninput="TDate2()" name="from" required class="length">
+                        </div><br>
 
                         <div class="labelStyle">
                             <label for="toDate">To Date:</label>
-                            <input type="date" id="toDate" name="toDate" required class="length"></div><br>
+                            <input type="date" id="toDate" oninput="TDate()" name="toDate" required class="length">
+                        </div><br>
 
                         <div class="labelStyle">
                             <label for="total">Total</label>
-                            <input type="text" id="total" name="total" readonly="readonly" class="length"></div><br>
+                            <input type="text" id="total" name="total" onclick="cal()" readonly="readonly" class="length">
+                        </div><br>
 
-                        <input type="submit" value="Book Now" class="submitstyle">
+                        <input id="submit" type="submit" value="Book Now" class="submitstyle">
                     </form>
                 </div>
             </div>
@@ -245,7 +218,8 @@
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span></P>
+                    <span class="fa fa-star checked"></span>
+                </P>
                 <P>AMENITIES</P>
                 <ul>
                     <li>Room Service</li>
@@ -261,55 +235,12 @@
             </div>
 
         </div>
-    </body>
 
-    <footer>
+        <footer id="footer">
+            <script src="scripts/common.js " class="smallIcons"></script>
 
-        <!-- Button trigger modal -->
-        <span><button type="button" class="btn btn-info" data-toggle="modal" data-target="#contactModal">
-    Contact Us
-  </button></span>
-
-        <!--Contact  Modal -->
-        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Get In Touch</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-                    </div>
-
-                    <div class="modal-body">
-                        <p>Thank You for reaching out!!!</p>
-                        <p>Please enter your email we will get back to you</p>
-
-                        <form action="index.html" m ethod="get">
-                            <input type="email" required placeholder="Enter your email">
-
-
-                        </form>
-                    </div>
-
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Submit</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Contact  Modal Ends-->
-
-
-        <span> © 2020 ROOM SEARCH PVT. LTD</span>
-        <!--Social Media Logos-->
-        <span class="smallIcons">
-                <a href="https://www.facebook.com" target="_blank"><img class="socialLogo" src="assests/images/facebook.png" alt="facebooklogo"></a>
-                <a href="https://www.instagram.com" target="_blank"><img class="socialLogo" src="assests/images/instagram.png" alt="instagramlogo"></a>
-                <a href="https://www.twitter.com" target="_blank"><img class="socialLogo" src="assests/images/twitter.png" alt="twitterlogo"></a>
-            </span>
-    </footer>
+        </footer>
 </div>
-
+</body>
 
 </html>

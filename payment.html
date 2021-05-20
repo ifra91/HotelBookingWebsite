@@ -18,6 +18,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.js"></script>
+    <script src="scripts/detail.js"></script>
+    <script src="scripts/payment.js"></script>
+
+
 
     <!--Style to customize Bootstrap Styling and other external link-->
     <style>
@@ -47,7 +52,7 @@
             background-color: #000;
         }
         
-        footer {
+        #footer {
             display: flex;
         }
     </style>
@@ -58,44 +63,10 @@
         <!--Main Div Enclosing Whole Page-->
         <a href="loader.html"></a>
         <!--Header Starts-->
-        <header>
+        <header id="header">
 
-            <!-- Button trigger modal -->
-            <a href="index.html"><img class="logo" src="C:\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" alt="logo"></a>
+            <script src="scripts/common.js"></script>
 
-            <!--Bootstrap Modal Login Starts-->
-            <button type="button" class="btn btn-light login" data-toggle="modal" data-target="#exampleModal">
-                    Login</button>
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                        </div>
-
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                </div>
-                            </form>
-                        </div>
-
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" style="margin-left: auto;margin-right: auto;">Login</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Bootstrap Modal Login Ends-->
         </header>
         <!--Header Ends-->
 
@@ -111,65 +82,36 @@
 
             <div class="tarrif">
                 <div>
-                    <p><b>Name:</b> John Doe</p>
-                    <p><b>Number of Adults:</b> 2</p>
-                    <p><b>Check-in Date:</b> 06/06/2020</p>
-                    <p><b>Check-out Date:</b> 08/06/2020</p>
+                    <p><b>Name: </b><span id="CustomerName"></span></p>
+
+                    <p><b>Number of Adults: </b><span id="bookingNumber"></span></p>
+
+                    <p><b>Check-in Date: </b><span id="Date1"></span></p>
+
+
+                    <p><b>Check-out Date: </b><span id="Date2"></span></p>
+
+
                 </div>
 
                 <div style="margin-top: 2%;">
-                    <p><b>Tariff Breakdown:</b> Rs. 1000 x 2 Adults x 5 Nights</p>
-                    <p><b>Total Amount:</b> Rs. 10000</p>
+                    <p><b>Tariff Breakdown: </b><span>Rs. 1000 x </span><span id="adult"></span> Adults x <span id="numDays"></span> Nights
+                    </p>
+                    <p><b>Total Amount: </b> <span id="totalAmount"></span></p>
                 </div>
 
                 <!-- Button PayNow Bootstrap -->
-                <div class="btnLarge"><a id="linkSty"><button type="button" class="btn btn-success">Pay Now</button></a></div>
+                <div class="btnLarge"><a id="linkSty" id="myButton"><button  type="button" class="btn btn-success" >Pay Now</button></a></div>
             </div>
         </div>
         <!-- Content Div Ends -->
 
         <!-- Footer Starts -->
-        <footer>
-            <!-- Button trigger modal -->
-            <span><button type="button" class="btn btn-info " data-toggle="modal" data-target="#contactModal">
-    Contact Us
-  </button></span>
-
-            <!-- Contact Modal -->
-            <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Get In Touch</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-                        </div>
-                        <div class="modal-body">
-                            <p>Thank You for reaching out!!!</p>
-                            <p>Please enter your email we will get back to you</p>
-
-                            <form action="index.html" m ethod="get">
-                                <input type="email" required placeholder="Enter your email">
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary">Submit</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Contact Modal -->
-
-
-            <span> © 2020 ROOM SEARCH PVT. LTD</span>
-            <!-- External Website Logos -->
-            <span style="margin-right: 30px;"><a href = "https://www.facebook.com" target="_blank"><img class ="socialLogo" src = "assests/images/facebook.png"  alt ="facebooklogo"></a>
-                <a href = "https://www.instagram.com" target="_blank"><img class ="socialLogo" src = "assests/images/instagram.png" alt ="instagramlogo"></a>
-                <a href = "https://www.twitter.com" target="_blank"><img class ="socialLogo" src = "assests/images/twitter.png" alt ="twitterlogo"></a>
-                </span>
+        <footer id="footer">
+            <script src="scripts/common.js"></script>
         </footer>
         <!-- Footer Ends -->
+
     </div>
     <!-- Main Div Ends -->
 </body>

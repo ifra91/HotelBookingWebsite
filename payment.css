@@ -174,7 +174,7 @@
         height: 100%;
         margin: 0;
         position: absolute;
-        overflow: auto;
+        /* overflow: auto; */
     }
     .hotelImage {
         height: 272px;
